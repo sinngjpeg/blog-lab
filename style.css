@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121214;
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0px;
+}
+
+.main-header {
+    width: 100%;
+    background-color: #17171A;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 100%;
+}
+
+#search {
+    width: 100%;
+    padding: 15px;
+    background-color: #202024;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+}
+
+.header-content {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.blog-header {
+    background-color: #17171A;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #202024;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: #e07b67;
+}
+
+.post {
+    background: #121212;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+    transition: border-color 0.3s;
+    position: relative;
+}
+
+.post:hover {
+    border-color: #e07b67;
+}
+
+.date {
+    color: #e07b67;
+    font-size: 0.8rem;
+}
+
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+p {
+    color: #afafaf;
+    line-height: 1.6;
+}
+
+.logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.logo span {
+    color: #e07b67;
+}
+
+.heart-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.heart-icon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #e07b67;
+    stroke-width: 50px;
+    transition: all 0.3s ease;
+}
+
+.heart-icon.active {
+    fill: #e07b67;
+    stroke: #e07b67;
+}
+
+
+@media (max-width: 600px) {
+    .main-header {
+        padding: 20px 0;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .post {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
